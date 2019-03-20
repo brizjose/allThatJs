@@ -1,0 +1,49 @@
+1.
+create html file
+create a ts file to run js scripts
+
+
+2.*
+compile so that ts file runs the scripts
+to compile, run tsc ---a command available after installing
+
+ > tsc script.ts
+
+this creates a corresponding js file! and will hold the compiled js code.
+
+*with the setup below, after running tsc --init, this is replaced with simply running tsc
+
+3.
+put npm in control of dependencies
+
+ >npm init
+
+4. 
+set up a server
+
+ >npm install lite-server --save-dev
+
+5.
+configure package.json with run command
+
+"scripts": {
+    "start": "lite-server"
+}
+
+> npm start
+
+6.  -- if no html file, just running scripts...
+
+compile ts files with a command that puts npm in control and also ts
+
+ >tsc --init
+
+this creates a tsconfig.json
+
+by simply running tsc, it will compile all files:
+
+ >tsc
+
+7. --if using modules
+
+PLEASE READ THE 6_modules SECTION FOR INSTRUCTIONS ON USING A MODULE LOADER AND HOW TO SYNC IT IN INDEX.HTML

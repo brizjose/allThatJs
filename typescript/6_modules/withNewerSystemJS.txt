@@ -1,0 +1,19 @@
+if using newer version of systemJS, try this:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learning TypeScript</title>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/systemjs/dist/extras/named-register.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <script>
+      System.import("app")
+    </script>
+  </body>
+</html>
